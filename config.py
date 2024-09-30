@@ -10,7 +10,7 @@ class Config(object):
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'udacity-project-1'
 
     SQL_SERVER = os.environ.get('SQL_SERVER') or 'udacity-prj-1.database.windows.net'
-    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'udacity_prj_1'
+    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'udacity_prj_1 (udacity-prj-1/udacity_prj_1)'
     SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'khangnvt1'
     SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'Udacity@1123'
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
