@@ -81,7 +81,8 @@ def login():
     auth_url = _build_auth_url(scopes=Config.SCOPE, state=session["state"])
     return render_template('login.html', title='Sign In', form=form, auth_url=auth_url)
 
-@app.route(Config.REDIRECT_PATH)  # Its absolute URL must match your app's redirect_uri set in AAD  # This must match your app's redirect_uri set in AAD
+# @app.route(Config.REDIRECT_PATH)  # Its absolute URL must match your app's redirect_uri set in AAD  
+@app.route('/authorized') # This must match your app's redirect_uri set in AAD
 def authorized():
     if request.args.get('state') != session.get("state"):
         return redirect(url_for("home"))  # No-OP. Redirects to Home page
