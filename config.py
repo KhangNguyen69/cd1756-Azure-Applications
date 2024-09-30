@@ -12,7 +12,7 @@ class Config(object):
     SQL_SERVER = os.environ.get('SQL_SERVER') or 'udacity-prj-1.database.windows.net'
     SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'udacity_prj_1'
     SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'khangnvt1'
-    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'Udacity@123'
+    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'Udacity@1123'
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
     SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + SQL_PASSWORD + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE  + '?driver=ODBC+Driver+17+for+SQL+Server'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
